@@ -1,0 +1,52 @@
+.table {
+  width: 100%;
+  max-width: 1120px;
+  border-spacing: 0 0.5rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  th {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 430;
+    color: #00000063;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  td {
+    background: white;
+    padding: 1rem;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.022);
+  }
+
+}
+
+.txMeta {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+
+.entrada {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.saida {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.summarybox {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.actionsCol { text-align: right; width: 64px; }
+
+.actions { text-align: right; }
+.trashBtn { background: transparent; border: 0; padding: 6px; border-radius: 8px; color: #9ca3af; cursor: pointer; line-height: 0; transition: color .18s, background-color .18s, transform .12s; }
+.trashBtn:hover { color: #dc2626; background: rgba(220,38,38,.08); transform: translateY(-1px); }
+.trashIcon { display: block; }

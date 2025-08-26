@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #00000005;
+  color: #585858;
+}
+
+@media (max-width: 768px) {
+  .header {flex-direction:column;
+  padding: 1.2rem 1rem;
+  
+  .title {
+    font-size: 1.2rem;
+    justify-content: flex-start;
+  }
+
+  button {
+    width: 100%;
+      padding: 0.8rem 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.8rem 0.5rem;
+
+    .title {
+      font-size: 1rem;
+    }
+
+    button {
+      font-size: 0.95rem;
+      padding: 0.7rem 0;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #30107d;
+  color: white;
+  padding: 2.3rem 2rem;
+
+.title {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+  button {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: #5127b3;
+    color: #e5d5ff;
+    border: none;
+    padding: 0.9rem 2.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.2);
+    &:hover {
+      background: #5127b3e0;
+      transition: ease-in-out .2s;
+    }
+  }
+}
